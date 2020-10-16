@@ -1,8 +1,10 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4074115.svg)](https://doi.org/10.5281/zenodo.4074115)
+
 # Python for mathematics
 
 ## Development
 
-The book is written in files found in `nbs/book` in the [MySt markdown
+The book is written in files found in `book/` in the [MySt markdown
 format](https://myst-nb.readthedocs.io/en/latest/).
 
 To install development dependencies:

@@ -12,15 +12,6 @@ kernelspec:
   name: python3
 ---
 
-```{warning}
-This book is a work in progress and should be considered currently to be in a
-**pre**draft state. Work is actively taking place in preparation for October
-2020.
-
-If you happen to find this and notice any typos and/or have any suggestions
-please open an issue on the github repo: <https://github.com/drvinceknight/pfm>
-```
-
 # Introduction
 
 This book aims to introduce readers to programming for mathematics.
@@ -59,7 +50,7 @@ techniques**:
 
    $$\frac{d^2f}{dx^2} = 2 > 0\text{ for all values of }x$$
 
-   Thus $x=2/3$ is the global minima of the function.
+   Thus $x=3/2$ is the global minima of the function.
 ```
 
 ```{attention}
@@ -80,7 +71,7 @@ computer.**
 The following is an example, do not worry too much about the specific code used
 for now:
 
-1. Differentiate $f(x)$ to get $\frac{df}{dx}$;
+## Differentiate $f(x)$ to get $\frac{df}{dx}$
 
 ```{code-cell} ipython3
 import sympy as sym
@@ -89,13 +80,13 @@ x = sym.Symbol("x")
 sym.diff(x ** 2 - 3 * x + 1, x)
 ```
 
-2. Equate $\frac{df}{dx}=0$:
+## Equate $\frac{df}{dx}=0$
 
 ```{code-cell} ipython3
 sym.solveset(2 * x - 3, x)
 ```
 
-3. Use the second derivative test on the solution:
+## Use the second derivative test on the solution
 
 ```{code-cell} ipython3
 sym.diff(x ** 2 - 3 * x + 1, x, 2)
